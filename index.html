@@ -1,37 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Age calculator app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <form>
+          <div class="container">
+            <label for="day" class="input__group">
+              <span>Day</span>
+              <input type="text" id="day" name="day" placeholder="DD" />
+              <span class="error__day"></span>
+            </label>
+            <label for="month" class="input__group">
+              <span>Month</span>
+              <input type="text" id="month" name="month" placeholder="MM" />
+              <span class="error__month"></span>
+            </label>
+            <label for="year" class="input__group">
+              <span>Year</span>
+              <input type="text" id="year" name="year" placeholder="YYYY" />
+              <span class="error__year"></span>
+            </label>
+          </div>
+          <div class="btn">
+            <button type="submit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="46"
+                height="44"
+                viewBox="0 0 46 44"
+                role="img"
+                title="Submit"
+              >
+                <g fill="none" stroke="#FFF" stroke-width="2">
+                  <path
+                    d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </form>
 
-  Day
-  DD
-
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <section class="results">
+          <h1 class="results__year">
+            <span class="lines lines__year">--</span>
+            Years
+          </h1>
+          <h2 class="results__month">
+            <span class="lines lines__month">--</span>
+            Months
+          </h2>
+          <h2 class="results__day">
+            <span class="lines lines__day">--</span>
+            Days
+          </h2>
+        </section>
+      </div>
+    </main>
+  </body>
 </html>
