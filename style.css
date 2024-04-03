@@ -89,6 +89,16 @@ input:focus-visible {
   border-color: var(--purple);
 }
 
+/* Chrome & Safari */
+input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 ::placeholder {
   color: var(--smokey-grey);
   font-weight: 600;
